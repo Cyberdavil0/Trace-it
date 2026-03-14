@@ -17,7 +17,7 @@ Built for security researchers, analysts, and CLI addicts who want real signal, 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/Cyberdavil0/Trace-ip.git
+git clone https://github.com/Cyberdavil0/Trace-it.git
 cd Trace-it
 bash setup.sh
 ```
