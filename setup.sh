@@ -6,8 +6,8 @@
 
 set -e
 
-APP_NAME="Trace-ip"
-REPO_URL="https://github.com/Cyberdavil0/Trace-ip"
+APP_NAME="Trace-it"
+REPO_URL="https://github.com/Cyberdavil0/Trace-it.git"
 
 # ===========================================================
 # Detect OS
@@ -212,6 +212,8 @@ install_app() {
     mkdir -p "$INSTALL_DIR"
 
     cp -r "$(pwd)"/* "$INSTALL_DIR/"
+    cp -r "$(pwd)"/core "$INSTALL_DIR"/
+    cp -r "$(pwd)"/utils "$INSTALL_DIR"/
 
     mkdir -p "$(dirname "$BIN_PATH")"
 
