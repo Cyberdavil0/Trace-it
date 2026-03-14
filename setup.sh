@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ===========================================================
-# Trace-ip Universal Installer
+# Trace-it Universal Installer
 # Works on: Linux / WSL / Termux / macOS
 # ===========================================================
 
@@ -40,11 +40,11 @@ fi
 # ===========================================================
 
 if [[ "$EUID" -eq 0 ]]; then
-    INSTALL_DIR="/usr/bin/Trace-ip"
+    INSTALL_DIR="/usr/bin/Trace-it"
     BIN_PATH="/usr/bin/trace"
     MODE="global"
 else
-    INSTALL_DIR="$HOME/.local/bin/Trace-ip"
+    INSTALL_DIR="$HOME/.local/bin/Trace-it"
     BIN_PATH="$HOME/.local/bin/trace"
     MODE="local"
 fi
@@ -220,12 +220,12 @@ install_app() {
     cat <<EOF > "$BIN_PATH"
 #!/usr/bin/env bash
 
-if [[ -d "/usr/bin/Trace-ip" ]]; then
-TRACE_DIR="/usr/bin/Trace-ip"
-elif [[ -d "\$HOME/.local/bin/Trace-ip" ]]; then
-TRACE_DIR="\$HOME/.local/bin/Trace-ip"
+if [[ -d "/usr/bin/Trace-it" ]]; then
+TRACE_DIR="/usr/bin/Trace-it"
+elif [[ -d "\$HOME/.local/bin/Trace-it" ]]; then
+TRACE_DIR="\$HOME/.local/bin/Trace-it"
 else
-echo "[!] Trace-ip not installed"
+echo "[!] Trace-it not installed"
 exit 1
 fi
 
@@ -298,7 +298,7 @@ update_app() {
 
 show_help() {
 
-echo "Trace-ip Universal Installer"
+echo "Trace-it Universal Installer"
 
 echo
 echo "./setup.sh             → Install"
