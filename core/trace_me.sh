@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source utils/validator.sh
+source "$(dirname "$0")/../utils/validator.sh"
 check_dependencies || exit 1
 
 clear
